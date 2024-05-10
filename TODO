@@ -1,0 +1,15 @@
+ * use packed bits instead of one bit per bite
+ * reimplement and improve error correction
+ * improve uplink reception
+ * optimize code for speed (but keep it understendable!)
+ * support multiple signal sources at least for uplink and downlink
+ * Improve demodulator and frame decoder
+   suggestions:
+   * frame decoder should use soft decisions
+   * output from demodulator should be something like:
+     a) single floating point value <-1, 1> representing probabale state of
+        radio signal, or
+     b) two values, one with <-1, 1> representing probably demodulated value
+        and second with "relative signal quality" or something
+ * implement audio codec
+
