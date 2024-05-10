@@ -80,11 +80,11 @@ void frame_json(tpol_t *tpol, const frame_t *fr)
                 printf("\"data\": { \"encoding\": \"hex\", \"value\": \"%s\" } ",
                         sprint_hex2(buf, voice, 120/8));
 
-		sprintf(path, "traffic_%x%x%x-%x-%x%x-%x%x%x.hex", R0, R1, R2, F0, S0, S1, I0, I1, I2);
-		stream = fopen(path, "a+");
-		fprintf(stream, "%s\n", buf);
-		fclose(stream);
-//		fprintf(fp, "%s\n", buf);
+                sprintf(path, "traffic_%x%x%x-%x-%x%x-%x%x%x.hex", R0, R1, R2, F0, S0, S1, I0, I1, I2);
+                stream = fopen(path, "a+");
+                fprintf(stream, "%s\n", buf);
+                fclose(stream);
+                // fprintf(fp, "%s\n", buf);
             } else {
                 printf("\"FIXME\": \"FIXME\" ");
             }
