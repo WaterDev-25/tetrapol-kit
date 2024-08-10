@@ -2,13 +2,9 @@ TETRAPOL-KIT with hex file modification
 
 Original repository: http://brmlab.cz/git/tetrapol-kit.git
 
-If you are on MACOS the library glib, json-c is not detected, enter this command before compile :
+If you are on MACOS the glib, json-c library is not detected, enter this command before compile:
 
 export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/Cellar/glib/2.80.4/lib"
 export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/opt/gettext/lib"
 
 export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/Cellar/json-c/0.17/lib"
-
-The paths can be different, check the path with:
-
-pkg-config --libs glib-2.0
